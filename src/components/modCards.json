@@ -1,0 +1,2957 @@
+[
+  {
+    "id": "137-A001",
+    "name": "キャノーダム",
+    "cost": 10,
+    "effects": [
+      {
+        "name": "アタック+1",
+        "group": "attack",
+        "mutate": 1
+      },
+      {
+        "name": "Bためうちでメガキャノン",
+        "group": "cs"
+      },
+      {
+        "name": "HP-40",
+        "group": "hp",
+        "mutate": -40
+      }
+    ]
+  },
+
+  {
+    "id": "137-A002",
+    "name": "アモナキュール",
+    "cost": 16,
+    "effects": [
+      {
+        "name": "HP+80",
+        "group": "hp",
+        "mutate": 80
+      },
+      {
+        "name": "ファーストバブルラップ",
+        "group": "first"
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "アタック-1",
+        "group": "attack",
+        "mutate": -1
+      }
+    ]
+  },
+
+  {
+    "id": "137-A003",
+    "name": "コルドベア",
+    "cost": 18,
+    "effects": [
+      {
+        "name": "HP+140",
+        "group": "hp",
+        "mutate": 140
+      },
+      {
+        "name": "Bためうちでアイスキューブ",
+        "group": "cs"
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "移動時にパネルこおり",
+        "group": "move"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A004",
+    "name": "ジーラ",
+    "cost": 12,
+    "effects": [
+      {
+        "name": "アタック+3",
+        "group": "attack",
+        "mutate": 3
+      },
+      {
+        "name": "フロートシューズをOFF",
+        "group": "float"
+      },
+      {
+        "name": "エアシューズをOFF",
+        "group": "air"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A005",
+    "name": "メガリア",
+    "cost": 20,
+    "effects": [
+      {
+        "name": "チャージ+4",
+        "group": "charge",
+        "mutate": 4
+      },
+      {
+        "name": "エアシューズ",
+        "group": "air"
+      },
+      {
+        "name": "HP-80",
+        "group": "hp",
+        "mutate": -80
+      },
+      {
+        "name": "ファーストバリア100",
+        "group": "first"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A006",
+    "name": "メテファイア",
+    "cost": 20,
+    "effects": [
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bボタンでメテオ×1",
+        "group": "buster"
+      },
+      {
+        "name": "端まで移動バグ",
+        "group": "corner"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A007",
+    "name": "キルプラント",
+    "cost": 19,
+    "effects": [
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bためうちでクサムラシード",
+        "group": "cs"
+      },
+      {
+        "name": "エアシューズをOFF",
+        "group": "air"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A008",
+    "name": "ダークシャドー",
+    "cost": 6,
+    "effects": [
+      {
+        "name": "Bボタンでソード",
+        "group": "buster"
+      },
+      {
+        "name": "Bためうちでインビジブル",
+        "group": "cs"
+      },
+      {
+        "name": "ステータスガードをOFF",
+        "group": "statusguard"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A009",
+    "name": "ボンビートル",
+    "cost": 11,
+    "effects": [
+      {
+        "name": "HP+100",
+        "group": "hp",
+        "mutate": 100
+      },
+      {
+        "name": "Bボタンでミニボム",
+        "group": "buster"
+      },
+      {
+        "name": "Bためうちでチャージショット",
+        "group": "cs"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A010",
+    "name": "ヘビーアレイ",
+    "cost": 12,
+    "effects": [
+      {
+        "name": "アタック+1",
+        "group": "attack",
+        "mutate": 1
+      },
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "バスターの追加効果をOFF",
+        "group": "busteradditional"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A011",
+    "name": "アゾマータ",
+    "cost": 24,
+    "effects": [
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "ステータスガード",
+        "group": "statusguard"
+      },
+      {
+        "name": "HP-20%",
+        "group": "hpr",
+        "mutate": -20
+      },
+      {
+        "name": "B+左をOFF",
+        "group": "bleft"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A012",
+    "name": "ジェライム",
+    "cost": 12,
+    "effects": [
+      {
+        "name": "HP+30",
+        "group": "hp",
+        "mutate": 30
+      },
+      {
+        "name": "Bためうちでパネルスチール",
+        "group": "cs"
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "ノーマルゲージ",
+        "group": "gauge"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A013",
+    "name": "ボルカノ",
+    "cost": 10,
+    "effects": [
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bためうちでブラックボム",
+        "group": "cs"
+      },
+      {
+        "name": "チャージ+4",
+        "group": "charge",
+        "mutate": 4
+      },
+      {
+        "name": "ココロウインドウバグ",
+        "group": "emotion"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A014",
+    "name": "ナンバーズ",
+    "cost": 17,
+    "effects": [
+      {
+        "name": "カスタム+1",
+        "group": "custom",
+        "mutate": 1
+      },
+      {
+        "name": "Bためうちでチャージショット",
+        "group": "cs"
+      },
+      {
+        "name": "メガフォルダ+1",
+        "group": "mega",
+        "mutate": 1
+      },
+      {
+        "name": "カスタム中HPバグ",
+        "group": "customhp"
+      },
+      {
+        "name": "ギガフォルダ+1",
+        "group": "giga",
+        "mutate": 1
+      }
+    ]
+  },
+
+  {
+    "id": "137-A015",
+    "name": "マグテクト",
+    "cost": 15,
+    "effects": [
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "HP-5%",
+        "group": "hpr",
+        "mutate": -5
+      },
+      {
+        "name": "チャージショットで左すいよせ",
+        "group": "cs"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A016",
+    "name": "クーモス",
+    "cost": 13,
+    "effects": [
+      {
+        "name": "HP+60",
+        "group": "hp",
+        "mutate": 60
+      },
+      {
+        "name": "移動時にパネルくさむら",
+        "group": "move"
+      },
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A017",
+    "name": "ボムボーイ",
+    "cost": 14,
+    "effects": [
+      {
+        "name": "バスターで1マス右押し",
+        "group": "busteradditional"
+      },
+      {
+        "name": "端まで移動バグを修正",
+        "group": "corner"
+      },
+      {
+        "name": "移動時のパネル変化バグを修正",
+        "group": "move"
+      },
+      {
+        "name": "チャージショットの追加効果をOFF",
+        "group": "csadditional"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A018",
+    "name": "ウドノート",
+    "cost": 13,
+    "effects": [
+      {
+        "name": "HP+90",
+        "group": "hp",
+        "mutate": 90
+      },
+      {
+        "name": "バスターでパネルくさむら",
+        "group": "busteradditional"
+      },
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "ダメージ時異常発生バグ修正",
+        "group": "damagedbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A019",
+    "name": "ピカラー",
+    "cost": 11,
+    "effects": [
+      {
+        "name": "HP+5%",
+        "group": "hpr",
+        "mutate": 5
+      },
+      {
+        "name": "カスタムダメージバグを修正",
+        "group": "customdamage"
+      },
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "アタック-1",
+        "group": "attack",
+        "mutate": -1
+      }
+    ]
+  },
+
+  {
+    "id": "137-A020",
+    "name": "エレオーガ",
+    "cost": 16,
+    "effects": [
+      {
+        "name": "HP+50",
+        "group": "hp",
+        "mutate": 50
+      },
+      {
+        "name": "ココロウインドウバグを修正",
+        "group": "emotion"
+      },
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "ステータスバグを修正",
+        "group": "status"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A021",
+    "name": "ダルスト",
+    "cost": 12,
+    "effects": [
+      {
+        "name": "HP+130",
+        "group": "hp",
+        "mutate": 130
+      },
+      {
+        "name": "Bためうちでヘルズバーナー",
+        "group": "cs"
+      },
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      },
+      {
+        "name": "バトル中HPバグ",
+        "group": "battlehp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A022",
+    "name": "センボン",
+    "cost": 11,
+    "effects": [
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "バスター空撃ちバグを修正",
+        "group": "busterbug"
+      },
+      {
+        "name": "ラピッド+4",
+        "group": "rapid",
+        "mutate": 4
+      }
+    ]
+  },
+
+  {
+    "id": "137-A023",
+    "name": "ヒトデスタ",
+    "cost": 15,
+    "effects": [
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "チャージショットにバブル",
+        "group": "csadditional"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A024",
+    "name": "グラサン",
+    "cost": 8,
+    "effects": [
+      {
+        "name": "Bためうちでフラッシュボム",
+        "group": "cs"
+      },
+      {
+        "name": "スーパーアーマーをOFF",
+        "group": "armor"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A025",
+    "name": "カカジー",
+    "cost": 14,
+    "effects": [
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bためうちでドールサンダー",
+        "group": "cs"
+      },
+      {
+        "name": "チップ使用時にリカバリー",
+        "group": "chiprecovery"
+      },
+      {
+        "name": "バスター空撃ちバグ",
+        "group": "busterbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A026",
+    "name": "ゼロプレーン",
+    "cost": 20,
+    "effects": [
+      {
+        "name": "HP-10%",
+        "group": "hpr",
+        "mutate": -10
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "エアシューズ",
+        "group": "air"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A027",
+    "name": "レムゴン",
+    "cost": 19,
+    "effects": [
+      {
+        "name": "HP+200",
+        "group": "hp",
+        "mutate": 200
+      },
+      {
+        "name": "アンダーシャツ",
+        "group": "undershirt"
+      },
+      {
+        "name": "ダメージ時にHPバグ発生",
+        "group": "damagedbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A028",
+    "name": "アルマン",
+    "cost": 12,
+    "effects": [
+      {
+        "name": "HP+5%",
+        "group": "hpr",
+        "mutate": 5
+      },
+      {
+        "name": "チャージショットにブレイク",
+        "group": "csadditional"
+      },
+      {
+        "name": "チャージ-3",
+        "group": "charge",
+        "mutate": -3
+      }
+    ]
+  },
+
+  {
+    "id": "137-A029",
+    "name": "ヤカーン",
+    "cost": 15,
+    "effects": [
+      {
+        "name": "Bためうちでスプレッドガン",
+        "group": "cs"
+      },
+      {
+        "name": "B+左でシールド",
+        "group": "bleft"
+      },
+      {
+        "name": "チップ使用時にリカバリー",
+        "group": "chiprecovery"
+      },
+      {
+        "name": "バトル中HPバグを修正",
+        "group": "battlehp"
+      },
+      {
+        "name": "カスタムダメージバグ 40",
+        "group": "customdamage"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A030",
+    "name": "ツボリュウ",
+    "cost": 20,
+    "effects": [
+      {
+        "name": "HP+180",
+        "group": "hp",
+        "mutate": 180
+      },
+      {
+        "name": "Bためうちでチャージショット",
+        "group": "cs"
+      },
+      {
+        "name": "メガフォルダ+1",
+        "group": "mega",
+        "mutate": 1
+      },
+      {
+        "name": "ステータスバグ",
+        "group": "status"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A031",
+    "name": "ナンバーマン",
+    "cost": 35,
+    "effects": [
+      {
+        "name": "カスタム+3",
+        "group": "custom",
+        "mutate": 3
+      },
+      {
+        "name": "メガフォルダ+1",
+        "group": "mega",
+        "mutate": 1
+      },
+      {
+        "name": "ギガフォルダ+1",
+        "group": "giga",
+        "mutate": 1
+      },
+      {
+        "name": "HP-20%",
+        "group": "hpr",
+        "mutate": 20
+      }
+    ]
+  },
+
+  {
+    "id": "137-A032",
+    "name": "アイスマン",
+    "cost": 25,
+    "effects": [
+      {
+        "name": "HP+80",
+        "group": "hp",
+        "mutate": 80
+      },
+      {
+        "name": "Bためうちでアイスシード",
+        "group": "cs"
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "カスタム中HPバグを修正",
+        "group": "customhp"
+      },
+      {
+        "name": "スーパーアーマーをOFF",
+        "group": "armor"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A033",
+    "name": "スカルマン",
+    "cost": 30,
+    "effects": [
+      {
+        "name": "HP+100",
+        "group": "hp",
+        "mutate": 100
+      },
+      {
+        "name": "チャージショットにHPバグ",
+        "group": "csadditional"
+      },
+      {
+        "name": "バトル中HPバグ",
+        "group": "battlehp"
+      },
+      {
+        "name": "ステータスバグ",
+        "group": "status"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A034",
+    "name": "シャドーマン",
+    "cost": 38,
+    "effects": [
+      {
+        "name": "HP-50",
+        "group": "hp",
+        "mutate": -50
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "Bためうちでロングソード",
+        "group": "cs"
+      },
+      {
+        "name": "B+左でカワリミ",
+        "group": "bleft"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A035",
+    "name": "カットマン",
+    "cost": 32,
+    "effects": [
+      {
+        "name": "HP-100",
+        "group": "hp",
+        "mutate": -100
+      },
+      {
+        "name": "Bためうちでヨーヨー",
+        "group": "cs"
+      },
+      {
+        "name": "アタック+4",
+        "group": "attack",
+        "mutate": 4
+      }
+    ]
+  },
+
+  {
+    "id": "137-A036",
+    "name": "ナイトマン",
+    "cost": 45,
+    "effects": [
+      {
+        "name": "HP+20%",
+        "group": "hpr",
+        "mutate": 20
+      },
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "アタック×2",
+        "group": "attack"
+      },
+      {
+        "name": "アンダーシャツ",
+        "group": "undershirt"
+      },
+      {
+        "name": "バスター空撃ちバグ",
+        "group": "busterbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A037",
+    "name": "トードマン",
+    "cost": 34,
+    "effects": [
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "チャージショットにマヒ",
+        "group": "csadditional"
+      },
+      {
+        "name": "アタック-1",
+        "group": "attack",
+        "mutate": -1
+      },
+      {
+        "name": "バスター空撃ちバグを修正",
+        "group": "busterbug"
+      },
+      {
+        "name": "チャージ-3",
+        "group": "charge",
+        "mutate": -3
+      }
+    ]
+  },
+
+  {
+    "id": "137-A038",
+    "name": "マグネットマン",
+    "cost": 37,
+    "effects": [
+      {
+        "name": "HP+240",
+        "group": "hp",
+        "mutate": 240
+      },
+      {
+        "name": "B+左で足止め",
+        "group": "bleft"
+      },
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "チャージショットの追加効果をOFF",
+        "group": "csadditional"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A039",
+    "name": "プラネットマン",
+    "cost": 40,
+    "effects": [
+      {
+        "name": "HP+300",
+        "group": "hp",
+        "mutate": 300
+      },
+      {
+        "name": "ステータスガード",
+        "group": "statusguard"
+      },
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bボタンでクラックシュート",
+        "group": "buster"
+      },
+      {
+        "name": "エアシューズをOFF",
+        "group": "air"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A040",
+    "name": "ビーストマン",
+    "cost": 33,
+    "effects": [
+      {
+        "name": "ラピッド+4",
+        "group": "rapid",
+        "mutate": 4
+      },
+      {
+        "name": "アンダーシャツ",
+        "group": "undershirt"
+      },
+      {
+        "name": "Bためうちでフミコミザン",
+        "group": "cs"
+      },
+      {
+        "name": "ラッシュサポート",
+        "group": "rush"
+      },
+      {
+        "name": "端まで移動バグ",
+        "group": "corner"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A041",
+    "name": "デザートマン",
+    "cost": 36,
+    "effects": [
+      {
+        "name": "HP+160",
+        "group": "hp",
+        "mutate": 160
+      },
+      {
+        "name": "ダメージ時異常発生バグを修正",
+        "group": "damagedbug"
+      },
+      {
+        "name": "チャージ+4",
+        "group": "charge",
+        "mutate": 4
+      },
+      {
+        "name": "エアシューズをOFF",
+        "group": "air"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A042",
+    "name": "ヤマトマン",
+    "cost": 35,
+    "effects": [
+      {
+        "name": "HP+10%",
+        "group": "hpr",
+        "mutate": 10
+      },
+      {
+        "name": "B+左でリフレクト",
+        "group": "bleft"
+      },
+      {
+        "name": "アタック+1",
+        "group": "attack",
+        "mutate": 1
+      },
+      {
+        "name": "カスタム中HPバグ",
+        "group": "customhp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A043",
+    "name": "ビデオマン",
+    "cost": 32,
+    "effects": [
+      {
+        "name": "HP-10%",
+        "group": "hpr",
+        "mutate": -10
+      },
+      {
+        "name": "チャージショットでパネル左矢印",
+        "group": "csadditional"
+      },
+      {
+        "name": "クイックゲージ",
+        "group": "gauge"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A044",
+    "name": "バーナーマン",
+    "cost": 29,
+    "effects": [
+      {
+        "name": "HP+120",
+        "group": "hp",
+        "mutate": 120
+      },
+      {
+        "name": "カスタムダメージバグ 40",
+        "group": "customdamage"
+      },
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      },
+      {
+        "name": "ココロウインドウバグ",
+        "group": "emotion"
+      },
+      {
+        "name": "アタック+2",
+        "group": "attack",
+        "mutate": 2
+      }
+    ]
+  },
+
+  {
+    "id": "137-A045",
+    "name": "スターマン",
+    "cost": 32,
+    "effects": [
+      {
+        "name": "メガフォルダ+1",
+        "group": "mega",
+        "mutate": 1
+      },
+      {
+        "name": "移動時のパネル変化バグを修正",
+        "group": "move"
+      },
+      {
+        "name": "アタック-2",
+        "group": "attack",
+        "mutate": -2
+      },
+      {
+        "name": "ココロウインドウバグを修正",
+        "group": "emotion"
+      },
+      {
+        "name": "バトル中HPバグを修正",
+        "group": "battlehp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A046",
+    "name": "ブリザードマン",
+    "cost": 30,
+    "effects": [
+      {
+        "name": "HP+60",
+        "group": "hp",
+        "mutate": 60
+      },
+      {
+        "name": "Bためうちでブリザードボール",
+        "group": "cs"
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "フロートシューズをOFF",
+        "group": "float"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A047",
+    "name": "スワローマン",
+    "cost": 36,
+    "effects": [
+      {
+        "name": "エアシューズ",
+        "group": "air"
+      },
+      {
+        "name": "チャージショットにチップ破壊",
+        "group": "csadditional"
+      },
+      {
+        "name": "ビートサポート",
+        "group": "beat"
+      },
+      {
+        "name": "ダメージ時に混乱発生バグ",
+        "group": "damagedbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A048",
+    "name": "スラッシュマン",
+    "cost": 31,
+    "effects": [
+      {
+        "name": "アタック+4",
+        "group": "attack",
+        "mutate": 4
+      },
+      {
+        "name": "Bためうちでワイドソード",
+        "group": "cs"
+      },
+      {
+        "name": "バスター空撃ちバグ",
+        "group": "busterbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A049",
+    "name": "キラーマン",
+    "cost": 40,
+    "effects": [
+      {
+        "name": "メガフォルダ+1",
+        "group": "mega",
+        "mutate": 1
+      },
+      {
+        "name": "チャージショットに即死",
+        "group": "csadditional"
+      },
+      {
+        "name": "HP-10%",
+        "group": "hpr",
+        "mutate": -10
+      },
+      {
+        "name": "バトル中HPバグ",
+        "group": "battlehp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A050",
+    "name": "グランドマン",
+    "cost": 43,
+    "effects": [
+      {
+        "name": "HP+25%",
+        "group": "hpr",
+        "mutate": 25
+      },
+      {
+        "name": "Bためうちでドリルアーム",
+        "group": "cs"
+      },
+      {
+        "name": "カスタム-1",
+        "group": "custom",
+        "mutate": -1
+      },
+      {
+        "name": "メガフォルダ-1",
+        "group": "mega",
+        "mutate": -1
+      }
+    ]
+  },
+
+  {
+    "id": "137-A051",
+    "name": "ダストマン",
+    "cost": 37,
+    "effects": [
+      {
+        "name": "HP+140",
+        "group": "hp",
+        "mutate": 140
+      },
+      {
+        "name": "バスターでパネルヒビ",
+        "group": "busteradditional"
+      },
+      {
+        "name": "B+左でスイコミ",
+        "group": "bleft"
+      },
+      {
+        "name": "移動時にパネルヒビ",
+        "group": "move"
+      }
+    ]
+  },
+
+  {
+    "id": "137-A052",
+    "name": "ブラストマン",
+    "cost": 28,
+    "effects": [
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "アタック+1",
+        "group": "attack",
+        "mutate": 1
+      },
+      {
+        "name": "移動時のパネル変化バグを修正",
+        "group": "move"
+      },
+      {
+        "name": "HP-80",
+        "group": "hp",
+        "mutate": -80
+      }
+    ]
+  },
+
+  {
+    "id": "137-A053",
+    "name": "サーカスマン",
+    "cost": 43,
+    "effects": [
+      {
+        "name": "ギガフォルダ+1",
+        "group": "giga",
+        "mutate": 1
+      },
+      {
+        "name": "タンゴサポート",
+        "group": "tango"
+      },
+      {
+        "name": "HP-200",
+        "group": "hp",
+        "mutate": -200
+      },
+      {
+        "name": "ファーストバリアをOFF",
+        "group": "first"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B001",
+    "name": "ハンディース",
+    "cost": 16,
+    "effects": [
+      {
+        "name": "HP+100",
+        "group": "hp",
+        "mutate": 100
+      },
+      {
+        "name": "Bためうちでカウントボム",
+        "group": "cs"
+      },
+      {
+        "name": "チップ使用時にリカバリーをOFF",
+        "group": "chiprecovery"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B002",
+    "name": "プクール",
+    "cost": 12,
+    "effects": [
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "Bためうちでバブルスプレッド",
+        "group": "cs"
+      },
+      {
+        "name": "B+左をOFF",
+        "group": "bleft"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B003",
+    "name": "ジェリー",
+    "cost": 13,
+    "effects": [
+      {
+        "name": "HP+120",
+        "group": "hp",
+        "mutate": 120
+      },
+      {
+        "name": "ヘビーゲージ",
+        "group": "gauge"
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "チャージ+4",
+        "group": "charge",
+        "mutate": 4
+      }
+    ]
+  },
+
+  {
+    "id": "137-B004",
+    "name": "ポイットン",
+    "cost": 13,
+    "effects": [
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "アンダーシャツ",
+        "group": "undershirt"
+      },
+      {
+        "name": "HP-40",
+        "group": "hp",
+        "mutate": -40
+      },
+      {
+        "name": "ファーストバリア",
+        "group": "first"
+      },
+      {
+        "name": "ダメージ時に異常発生バグを修正",
+        "group": "damagedbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B005",
+    "name": "サテラ",
+    "cost": 8,
+    "effects": [
+      {
+        "name": "ラピッド+4",
+        "group": "rapid",
+        "mutate": 4
+      },
+      {
+        "name": "エアシューズ",
+        "group": "air"
+      },
+      {
+        "name": "カスタムダメージバグ 20",
+        "group": "customdamage"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B006",
+    "name": "パララ＆リモコゴロー",
+    "cost": 9,
+    "effects": [
+      {
+        "name": "HP+80",
+        "group": "hp",
+        "mutate": 80
+      },
+      {
+        "name": "バスターでパネルヒビ",
+        "group": "busteradditional"
+      },
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "エアシューズをOFF",
+        "group": "air"
+      },
+      {
+        "name": "移動時にパネルあな",
+        "group": "move"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B007",
+    "name": "ユラ",
+    "cost": 8,
+    "effects": [
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "HP-5%",
+        "group": "hpr",
+        "mutate": -5
+      },
+      {
+        "name": "ステータスバグを修正",
+        "group": "status"
+      },
+      {
+        "name": "端まで移動バグを修正",
+        "group": "corner"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B008",
+    "name": "タコバル",
+    "cost": 14,
+    "effects": [
+      {
+        "name": "HP+50",
+        "group": "hp",
+        "mutate": 50
+      },
+      {
+        "name": "バスター空撃ちバグ",
+        "group": "busterbug"
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "アタック+3",
+        "group": "attack",
+        "mutate": 3
+      }
+    ]
+  },
+
+  {
+    "id": "137-B009",
+    "name": "シェルキー",
+    "cost": 8,
+    "effects": [
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "B+左でシールド",
+        "group": "bleft"
+      },
+      {
+        "name": "ラピッド+4",
+        "group": "rapid",
+        "mutate": 4
+      }
+    ]
+  },
+
+  {
+    "id": "137-B010",
+    "name": "マグニッカー",
+    "cost": 7,
+    "effects": [
+      {
+        "name": "HP+30",
+        "group": "hp",
+        "mutate": 30
+      },
+      {
+        "name": "チャージショットにパネル右矢印",
+        "group": "csadditional"
+      },
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "バスターの追加効果をOFF",
+        "group": "busteradditional"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B011",
+    "name": "メテマージ",
+    "cost": 15,
+    "effects": [
+      {
+        "name": "HP+5%",
+        "group": "hpr",
+        "mutate": 5
+      },
+      {
+        "name": "B+左でメテオ×3",
+        "group": "bleft"
+      },
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      },
+      {
+        "name": "端まで移動バグ",
+        "group": "corner"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B012",
+    "name": "モモグラン",
+    "cost": 6,
+    "effects": [
+      {
+        "name": "HP-70",
+        "group": "hp",
+        "mutate": -70
+      },
+      {
+        "name": "Bためうちでインビジブル",
+        "group": "cs"
+      },
+      {
+        "name": "ラッシュサポート",
+        "group": "rush"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B013",
+    "name": "ニドキャスター",
+    "cost": 10,
+    "effects": [
+      {
+        "name": "アタック+1",
+        "group": "attack",
+        "mutate": 1
+      },
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "ラピッド+1",
+        "group": "rapid",
+        "mutate": 1
+      },
+      {
+        "name": "ココロウインドウバグを修正",
+        "group": "emotion"
+      },
+      {
+        "name": "チャージ+1",
+        "group": "charge",
+        "mutate": 1
+      }
+    ]
+  },
+
+  {
+    "id": "137-B014",
+    "name": "ツインズ",
+    "cost": 15,
+    "effects": [
+      {
+        "name": "HP+100",
+        "group": "hp",
+        "mutate": 100
+      },
+      {
+        "name": "チップ使用時にリカバリー",
+        "group": "chiprecovery"
+      },
+      {
+        "name": "アタック+1",
+        "group": "attack",
+        "mutate": 1
+      },
+      {
+        "name": "チャージショットの追加効果をOFF",
+        "group": "csadditional"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B015",
+    "name": "ウォーラ",
+    "cost": 12,
+    "effects": [
+      {
+        "name": "HP+60",
+        "group": "hp",
+        "mutate": 60
+      },
+      {
+        "name": "ファーストバリアをOFF",
+        "group": "first"
+      },
+      {
+        "name": "カスタム+1",
+        "group": "custom",
+        "mutate": 1
+      }
+    ]
+  },
+
+  {
+    "id": "137-B016",
+    "name": "キルブー",
+    "cost": 24,
+    "effects": [
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "ステータスガード",
+        "group": "statusguard"
+      },
+      {
+        "name": "HP-20%",
+        "group": "hpr",
+        "mutate": -20
+      },
+      {
+        "name": "Bためうちでバンブーランス",
+        "group": "cs"
+      },
+      {
+        "name": "移動時にパネルくさむら",
+        "group": "move"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B017",
+    "name": "トトポール",
+    "cost": 13,
+    "effects": [
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      },
+      {
+        "name": "チップ使用時にリカバリー",
+        "group": "chiprecovery"
+      },
+      {
+        "name": "メガフォルダ+1",
+        "group": "mega",
+        "mutate": 1
+      },
+      {
+        "name": "カスタム中HPバグ",
+        "group": "customhp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B018",
+    "name": "キャノガード",
+    "cost": 10,
+    "effects": [
+      {
+        "name": "Bためうちでキャノン",
+        "group": "cs"
+      },
+      {
+        "name": "B+左でシールド",
+        "group": "bleft"
+      },
+      {
+        "name": "フロートシューズをOFF",
+        "group": "float"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B019",
+    "name": "スカラビア",
+    "cost": 7,
+    "effects": [
+      {
+        "name": "HP-70",
+        "group": "hp",
+        "mutate": -70
+      },
+      {
+        "name": "チャージショットに混乱",
+        "group": "csadditional"
+      },
+      {
+        "name": "カスタム中HPバグを修正",
+        "group": "customhp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B020",
+    "name": "ドラグリン",
+    "cost": 11,
+    "effects": [
+      {
+        "name": "HP+5%",
+        "group": "hpr",
+        "mutate": 5
+      },
+      {
+        "name": "ステータスバグ",
+        "group": "status"
+      },
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B021",
+    "name": "マリーナ",
+    "cost": 14,
+    "effects": [
+      {
+        "name": "HP+90",
+        "group": "hp",
+        "mutate": 90
+      },
+      {
+        "name": "ファーストバブルラップ",
+        "group": "first"
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "スーパーアーマーをOFF",
+        "group": "armor"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B022",
+    "name": "ドルダーラ",
+    "cost": 12,
+    "effects": [
+      {
+        "name": "HP+130",
+        "group": "hp",
+        "mutate": 130
+      },
+      {
+        "name": "バトル中HPバグを修正",
+        "group": "battlehp"
+      },
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bためうちでチャージショット",
+        "group": "cs"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B023",
+    "name": "ガンナー",
+    "cost": 11,
+    "effects": [
+      {
+        "name": "HP+70",
+        "group": "hp",
+        "mutate": 70
+      },
+      {
+        "name": "Bためうちでマシンガン",
+        "group": "cs"
+      },
+      {
+        "name": "アンダーシャツをOFF",
+        "group": "undershirt"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B024",
+    "name": "パルフォロン",
+    "cost": 13,
+    "effects": [
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bためうちでエレキパルス",
+        "group": "cs"
+      },
+      {
+        "name": "ココロウインドウバグ",
+        "group": "emotion"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B025",
+    "name": "ボムコーン",
+    "cost": 16,
+    "effects": [
+      {
+        "name": "HP+110",
+        "group": "hp",
+        "mutate": 110
+      },
+      {
+        "name": "Bためうちでコーンショット",
+        "group": "cs"
+      },
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "ダメージ時に混乱発生バグ",
+        "group": "damagedbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B026",
+    "name": "モリキュー",
+    "cost": 6,
+    "effects": [
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "バスターでパネルくさむら",
+        "group": "busteradditional"
+      },
+      {
+        "name": "カスタムダメージバグを修正",
+        "group": "customdamage"
+      },
+      {
+        "name": "Bためうちでチャージショット",
+        "group": "cs"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B027",
+    "name": "ハニホー",
+    "cost": 12,
+    "effects": [
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "エアシューズ",
+        "group": "air"
+      },
+      {
+        "name": "HP-10%",
+        "group": "hpr",
+        "mutate": -10
+      },
+      {
+        "name": "B+左でリスキーハニー",
+        "group": "bleft"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B028",
+    "name": "ナイトメア",
+    "cost": 5,
+    "effects": [
+      {
+        "name": "HP+20",
+        "group": "hp",
+        "mutate": 20
+      },
+      {
+        "name": "ココロウインドウバグ",
+        "group": "emotion"
+      },
+      {
+        "name": "ステータスバグ",
+        "group": "status"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B029",
+    "name": "スナーム",
+    "cost": 11,
+    "effects": [
+      {
+        "name": "アタック+3",
+        "group": "attack",
+        "mutate": 3
+      },
+      {
+        "name": "Bためうちでサンドワーム",
+        "group": "cs"
+      },
+      {
+        "name": "ラピッド-1",
+        "group": "rapid",
+        "mutate": -1
+      },
+      {
+        "name": "チャージ-1",
+        "group": "charge",
+        "mutate": -1
+      }
+    ]
+  },
+
+  {
+    "id": "137-B030",
+    "name": "アサシンメカ",
+    "cost": 22,
+    "effects": [
+      {
+        "name": "HP+10%",
+        "group": "hpr",
+        "mutate": 10
+      },
+      {
+        "name": "B+左でマシーンソード",
+        "group": "bleft"
+      },
+      {
+        "name": "バトル中HPバグ",
+        "group": "battlehp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B031",
+    "name": "ストーンマン",
+    "cost": 45,
+    "effects": [
+      {
+        "name": "HP+300",
+        "group": "hp",
+        "mutate": 300
+      },
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "移動時にパネルヒビ",
+        "group": "move"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B032",
+    "name": "カラードマン",
+    "cost": 32,
+    "effects": [
+      {
+        "name": "HP+210",
+        "group": "hp",
+        "mutate": 210
+      },
+      {
+        "name": "チャージショットに混乱",
+        "group": "csadditional"
+      },
+      {
+        "name": "B+左をOFF",
+        "group": "bleft"
+      },
+      {
+        "name": "ステータスバグ",
+        "group": "status"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B033",
+    "name": "シャークマン",
+    "cost": 35,
+    "effects": [
+      {
+        "name": "HP+180",
+        "group": "hp",
+        "mutate": 180
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "アタック+2",
+        "group": "attack",
+        "mutate": 2
+      },
+      {
+        "name": "ラピッド+2",
+        "group": "rapid",
+        "mutate": 2
+      },
+      {
+        "name": "チャージ+2",
+        "group": "charge",
+        "mutate": 2
+      }
+    ]
+  },
+
+  {
+    "id": "137-B034",
+    "name": "ファラオマン",
+    "cost": 35,
+    "effects": [
+      {
+        "name": "HP+5%",
+        "group": "hpr",
+        "mutate": 5
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "ギガフォルダ+1",
+        "group": "giga",
+        "mutate": 1
+      },
+      {
+        "name": "Bためうちでチャージショット",
+        "group": "cs"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B035",
+    "name": "エアーマン",
+    "cost": 34,
+    "effects": [
+      {
+        "name": "HP+150",
+        "group": "hp",
+        "mutate": 150
+      },
+      {
+        "name": "バスターで右押しやり",
+        "group": "busteradditional"
+      },
+      {
+        "name": "Bためうちでトルネード",
+        "group": "cs"
+      },
+      {
+        "name": "バスター空撃ちバグを修正",
+        "group": "busterbug"
+      },
+      {
+        "name": "ファーストバリアをOFF",
+        "group": "first"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B036",
+    "name": "フリーズマン",
+    "cost": 30,
+    "effects": [
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "バスターでパネルこおり",
+        "group": "busteradditional"
+      },
+      {
+        "name": "HP-5%",
+        "group": "hpr",
+        "mutate": -5
+      },
+      {
+        "name": "ファーストバリア200",
+        "group": "first"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B037",
+    "name": "サンダーマン",
+    "cost": 36,
+    "effects": [
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bためうちでエレキソード",
+        "group": "cs"
+      },
+      {
+        "name": "カスタム-1",
+        "group": "custom",
+        "mutate": -1
+      },
+      {
+        "name": "チップ使用時にリカバリー",
+        "group": "chiprecovery"
+      },
+      {
+        "name": "バトル中HPバグ",
+        "group": "battlehp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B038",
+    "name": "ナパームマン",
+    "cost": 39,
+    "effects": [
+      {
+        "name": "ファイアボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bためビッグボム",
+        "group": "cs"
+      },
+      {
+        "name": "アタック+1",
+        "group": "attack",
+        "mutate": 1
+      },
+      {
+        "name": "カスタム中HPバグ",
+        "group": "customhp"
+      },
+      {
+        "name": "ラピッド+4",
+        "group": "rapid",
+        "mutate": 4
+      }
+    ]
+  },
+
+  {
+    "id": "137-B039",
+    "name": "プラントマン",
+    "cost": 42,
+    "effects": [
+      {
+        "name": "ウッドボディ",
+        "group": "body"
+      },
+      {
+        "name": "ステータスガード",
+        "group": "status"
+      },
+      {
+        "name": "メガフォルダ+2",
+        "group": "mega",
+        "mutate": 2
+      },
+      {
+        "name": "チャージショットでパネルくさむら",
+        "group": "csadditional"
+      },
+      {
+        "name": "HP-80",
+        "group": "hp",
+        "mutate": -80
+      }
+    ]
+  },
+
+  {
+    "id": "137-B040",
+    "name": "ミストマン",
+    "cost": 37,
+    "effects": [
+      {
+        "name": "HP+260",
+        "group": "hp",
+        "mutate": 260
+      },
+      {
+        "name": "バスターでパネルどくぬま",
+        "group": "busteradditional"
+      },
+      {
+        "name": "チップ使用時にリカバリーをOFF",
+        "group": "chiprecovery"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B041",
+    "name": "ボウルマン",
+    "cost": 30,
+    "effects": [
+      {
+        "name": "HP+100",
+        "group": "hp",
+        "mutate": 100
+      },
+      {
+        "name": "Bためうちでバルカン",
+        "group": "cs"
+      },
+      {
+        "name": "カスタム+1",
+        "group": "custom",
+        "mutate": 1
+      },
+      {
+        "name": "フロートシューズをOFF",
+        "group": "float"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B042",
+    "name": "ダークマン",
+    "cost": 25,
+    "effects": [
+      {
+        "name": "Bためうちでワラニンギョウ",
+        "group": "cs"
+      },
+      {
+        "name": "端まで移動バグ",
+        "group": "corner"
+      },
+      {
+        "name": "カスタムダメージバグ 50",
+        "group": "customdamage"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B043",
+    "name": "タップマン",
+    "cost": 28,
+    "effects": [
+      {
+        "name": "HP+10%",
+        "group": "hpr",
+        "mutate": 10
+      },
+      {
+        "name": "バスターでチャージショット",
+        "group": "buster"
+      },
+      {
+        "name": "Bためうちでチャージショット",
+        "group": "cs"
+      },
+      {
+        "name": "ダメージ時にHPバグ発生",
+        "group": "damagedbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B044",
+    "name": "ケンドーマン",
+    "cost": 38,
+    "effects": [
+      {
+        "name": "HP+20%",
+        "group": "hpr",
+        "mutate": 20
+      },
+      {
+        "name": "Bためうちでバンブーソード",
+        "group": "cs"
+      },
+      {
+        "name": "バスター空撃ちバグ",
+        "group": "busterbug"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B045",
+    "name": "コールドマン",
+    "cost": 34,
+    "effects": [
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "チャージショットに凍結",
+        "group": "csadditional"
+      },
+      {
+        "name": "アタック-1",
+        "group": "attack",
+        "mutate": -1
+      },
+      {
+        "name": "移動時にパネルこおり",
+        "group": "move"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B046",
+    "name": "サーチマン",
+    "cost": 37,
+    "effects": [
+      {
+        "name": "HP+5%",
+        "group": "hpr",
+        "mutate": 5
+      },
+      {
+        "name": "Bためうちでサークルガン",
+        "group": "cs"
+      },
+      {
+        "name": "サーチシャッフル",
+        "group": "searchshuffle"
+      },
+      {
+        "name": "エアシューズをOFF",
+        "group": "air"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B047",
+    "name": "クラウドマン",
+    "cost": 40,
+    "effects": [
+      {
+        "name": "HP+230",
+        "group": "hp",
+        "mutate": 230
+      },
+      {
+        "name": "Bためうちでサンダーボール",
+        "group": "cs"
+      },
+      {
+        "name": "エレキボディ",
+        "group": "body"
+      },
+      {
+        "name": "メガフォルダ-1",
+        "group": "mega",
+        "mutate": -1
+      }
+    ]
+  },
+
+  {
+    "id": "137-B048",
+    "name": "フットマン",
+    "cost": 48,
+    "effects": [
+      {
+        "name": "HP+25%",
+        "group": "hpr",
+        "mutate": 25
+      },
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "アンダーシャツ",
+        "group": "undershirt"
+      },
+      {
+        "name": "ヘビーゲージ",
+        "group": "gauge"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B049",
+    "name": "チャージマン",
+    "cost": 31,
+    "effects": [
+      {
+        "name": "アタック+3",
+        "group": "attack",
+        "mutate": 3
+      },
+      {
+        "name": "移動時のパネル変化バグを修正",
+        "group": "move"
+      },
+      {
+        "name": "チャージ+4",
+        "group": "charge",
+        "mutate": 4
+      },
+      {
+        "name": "Bためうちでチャージショット",
+        "group": "cs"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B050",
+    "name": "テングマン",
+    "cost": 34,
+    "effects": [
+      {
+        "name": "アタック-1",
+        "group": "attack",
+        "mutate": -1
+      },
+      {
+        "name": "Bためうちでフウジンラケット",
+        "group": "cs"
+      },
+      {
+        "name": "エアシューズ",
+        "group": "air"
+      },
+      {
+        "name": "ビートサポート",
+        "group": "beat"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B051",
+    "name": "ダイブマン",
+    "cost": 42,
+    "effects": [
+      {
+        "name": "HP+320",
+        "group": "hp",
+        "mutate": 320
+      },
+      {
+        "name": "Bためうちでワイドショット",
+        "group": "cs"
+      },
+      {
+        "name": "アクアボディ",
+        "group": "body"
+      },
+      {
+        "name": "メガフォルダ+1",
+        "group": "mega",
+        "mutate": 1
+      },
+      {
+        "name": "カスタム-2",
+        "group": "custom",
+        "mutate": -2
+      }
+    ]
+  },
+
+  {
+    "id": "137-B052",
+    "name": "ジャッジマン",
+    "cost": 38,
+    "effects": [
+      {
+        "name": "カスタム+2",
+        "group": "custom",
+        "mutate": 2
+      },
+      {
+        "name": "Bためうちでスチールパニシュ",
+        "group": "cs"
+      },
+      {
+        "name": "HP-10%",
+        "group": "hpr",
+        "mutate": -10
+      },
+      {
+        "name": "ノーマルゲージ",
+        "group": "gauge"
+      }
+    ]
+  },
+
+  {
+    "id": "137-B053",
+    "name": "エレメントマン",
+    "cost": 42,
+    "effects": [
+      {
+        "name": "HP+150",
+        "group": "hp",
+        "mutate": 150
+      },
+      {
+        "name": "バスターでパネルくさむら",
+        "group": "busteradditional"
+      },
+      {
+        "name": "チャージショットでパネル氷",
+        "group": "csadditional"
+      },
+      {
+        "name": "移動時のパネル変化バグを修正",
+        "group": "move"
+      },
+      {
+        "name": "Bためうちでチャージショット",
+        "group": "cs"
+      }
+    ]
+  },
+
+  {
+    "id": "137-C001",
+    "name": "パンク",
+    "cost": 50,
+    "effects": [
+      {
+        "name": "HP+400",
+        "group": "hp",
+        "mutate": 400
+      },
+      {
+        "name": "B+左でリフレクト",
+        "group": "bleft"
+      },
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "チャージショットに混乱",
+        "group": "csadditional"
+      }
+    ]
+  },
+
+  {
+    "id": "137-C002",
+    "name": "ダークロックマン",
+    "cost": 80,
+    "effects": [
+      {
+        "name": "アタック+3",
+        "group": "attack",
+        "mutate": 3
+      },
+      {
+        "name": "バスターでパネルどくぬま",
+        "group": "busteradditional"
+      },
+      {
+        "name": "Bためうちでダークソード（威力400）",
+        "group": "cs"
+      },
+      {
+        "name": "ココロウインドウバグ",
+        "group": "emotion"
+      },
+      {
+        "name": "バトル中HPバグ",
+        "group": "battlehp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-C003",
+    "name": "ソウルバトラーのカスタマイズ",
+    "cost": 66,
+    "effects": [
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "アタック+4",
+        "group": "attack",
+        "mutate": 4
+      },
+      {
+        "name": "ラピッド+4",
+        "group": "rapid",
+        "mutate": 4
+      },
+      {
+        "name": "チャージ+4",
+        "group": "charge",
+        "mutate": 4
+      },
+      {
+        "name": "スーパーバルカン",
+        "group": "cs"
+      }
+    ]
+  },
+
+  {
+    "id": "137-C004",
+    "name": "名人の超絶カスタマイズ",
+    "cost": 69,
+    "effects": [
+      {
+        "name": "カスタム+3",
+        "group": "custom",
+        "mutate": 3
+      },
+      {
+        "name": "メガフォルダ+2",
+        "group": "mega",
+        "mutate": 2
+      },
+      {
+        "name": "ギガフォルダ+2",
+        "group": "giga",
+        "mutate": 2
+      },
+      {
+        "name": "ファーストドリームオーラ",
+        "group": "first"
+      }
+    ]
+  },
+
+  {
+    "id": "137-C005",
+    "name": "フォルテBX",
+    "cost": 70,
+    "effects": [
+      {
+        "name": "Bボタンでトリプルバスター",
+        "group": "buster"
+      },
+      {
+        "name": "Bためうちでシューティングバスター",
+        "group": "cs"
+      },
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "エアシューズ",
+        "group": "air"
+      }
+    ]
+  },
+
+  {
+    "id": "137-C006",
+    "name": "ジャンゴ",
+    "cost": 52,
+    "effects": [
+      {
+        "name": "HP+200",
+        "group": "hp",
+        "mutate": 200
+      },
+      {
+        "name": "Bためうちでガンデルソル",
+        "group": "cs"
+      },
+      {
+        "name": "アンダーシャツ",
+        "group": "undershirt"
+      },
+      {
+        "name": "ステータスガード",
+        "group": "statusguard"
+      }
+    ]
+  },
+
+  {
+    "id": "137-C007",
+    "name": "伯爵",
+    "cost": 60,
+    "effects": [
+      {
+        "name": "メガフォルダ+1",
+        "group": "mega",
+        "mutate": 1
+      },
+      {
+        "name": "Bためうちでブラッドレイン",
+        "group": "cs"
+      },
+      {
+        "name": "ステータスバグ",
+        "group": "status"
+      }
+    ]
+  },
+
+  {
+    "id": "137-C008",
+    "name": "ロックマンゼロ",
+    "cost": 45,
+    "effects": [
+      {
+        "name": "Bボタンでソード",
+        "group": "buster"
+      },
+      {
+        "name": "BためうちでZセイバー（威力100×3）",
+        "group": "cs"
+      },
+      {
+        "name": "クイックゲージ",
+        "group": "gauge"
+      }
+    ]
+  },
+
+  {
+    "id": "137-C009",
+    "name": "電脳獣グレイガ",
+    "cost": 70,
+    "effects": [
+      {
+        "name": "HP+600",
+        "group": "hp",
+        "mutate": 600
+      },
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "アタック+4",
+        "group": "attack",
+        "mutate": 4
+      },
+      {
+        "name": "カスタムHPバグ",
+        "group": "customhp"
+      },
+      {
+        "name": "ラピッド+4",
+        "group": "rapid",
+        "mutate": 4
+      }
+    ]
+  },
+
+  {
+    "id": "137-C010",
+    "name": "電脳獣ファルザー",
+    "cost": 70,
+    "effects": [
+      {
+        "name": "HP+40%",
+        "group": "hpr",
+        "mutate": 40
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "エアシューズ",
+        "group": "air"
+      },
+      {
+        "name": "バトル中HPバグ",
+        "group": "battlehp"
+      }
+    ]
+  },
+
+  {
+    "id": "137-D001g",
+    "name": "フォルテクロスロックマン(グレイガ版)",
+    "cost": 70,
+    "effects": [
+      {
+        "name": "HP+200",
+        "group": "hp",
+        "mutate": 200
+      },
+      {
+        "name": "スーパーアーマー",
+        "group": "armor"
+      },
+      {
+        "name": "ノーマルボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bボタンでトリプルバスター",
+        "group": "buster"
+      },
+      {
+        "name": "メガフォルダ-2",
+        "group": "mega",
+        "mutate": -2
+      },
+      {
+        "name": "Bためうちでシューティングバスター",
+        "group": "cs"
+      }
+    ]
+  },
+
+  {
+    "id": "137-D001f",
+    "name": "フォルテクロスロックマン(ファルザー版)",
+    "cost": 70,
+    "effects": [
+      {
+        "name": "HP+20%",
+        "group": "hpr",
+        "mutate": 20
+      },
+      {
+        "name": "フロートシューズ",
+        "group": "float"
+      },
+      {
+        "name": "ノーマルボディ",
+        "group": "body"
+      },
+      {
+        "name": "Bボタンでトリプルバスター",
+        "group": "buster"
+      },
+      {
+        "name": "メガフォルダ-2",
+        "group": "mega",
+        "mutate": -2
+      },
+      {
+        "name": "Bためうちでヘルズローリング",
+        "group": "cs"
+      }
+    ]
+  }
+]

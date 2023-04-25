@@ -1,0 +1,332 @@
+<template>
+  <v-container>
+    <v-row>
+      <!-- use for -->
+      <v-col cols="4">
+        <v-card class="card mb-2" color="grey-lighten-4">
+          <div class="card__title">つかうやつ</div>
+          <div class="card__list">
+            <draggable
+              v-model="useCards"
+              :group="{
+                name: 'mods',
+              }"
+              item-key="id"
+              class="draggable"
+            >
+              <template #item="{ element, index }">
+                <div class="item-wrapper">
+                  <!-- 削除ボタン -->
+                  <v-btn
+                    class="button"
+                    icon="mdi-close"
+                    width="16px"
+                    height="16px"
+                    size="x-small"
+                    flat
+                    color="blue"
+                    @click="onDeleteItem(index)"
+                  >
+                  </v-btn>
+                  <!-- カード本体 -->
+                  <mod-card
+                    class="mod-card my-1"
+                    :mod-card="element"
+                  ></mod-card>
+                </div>
+              </template>
+            </draggable>
+          </div>
+        </v-card>
+      </v-col>
+      <!-- master table -->
+      <v-col cols="4">
+        <v-card class="card" color="grey-lighten-4">
+          <div class="card__title">全カード</div>
+          <!-- 検索フォーム -->
+          <div class="card__form">
+            <!-- 容量 -->
+            <v-row>
+              <v-col>
+                <v-row>
+                  <v-col cols="8">
+                    <v-text-field
+                      type="number"
+                      single-line
+                      density="compact"
+                      variant="solo"
+                      hide-details
+                      v-model.number="maxCost"
+                    >
+                      <template #prepend>
+                        <div class="label-form">最大容量</div>
+                      </template>
+                      <template #append> MB </template>
+                    </v-text-field>
+                  </v-col>
+                  <v-col>
+                    <v-checkbox
+                      v-model="autoUpdate"
+                      density="compact"
+                      hide-details
+                    >
+                      <template #label>
+                        <div class="label-form">自動計算</div>
+                      </template>
+                    </v-checkbox>
+                  </v-col>
+                </v-row>
+              </v-col>
+            </v-row>
+            <!-- freeword -->
+            <v-row class="mt-2" no-gutters>
+              <v-col>
+                <v-text-field
+                  clearable
+                  hide-details
+                  density="compact"
+                  variant="solo"
+                  v-model="keyword"
+                >
+                  <template #prepend>
+                    <div class="label-form">自由文検索</div>
+                  </template>
+                </v-text-field>
+              </v-col>
+            </v-row>
+          </div>
+          <div class="card__list">
+            <draggable
+              v-model="searchedList"
+              :group="{
+                name: 'mods',
+                pull: 'clone',
+                put: false,
+              }"
+              :move="onMove"
+              item-key="id"
+              class="draggable"
+            >
+              <template #item="{ element }">
+                <mod-card
+                  class="my-1 mod-card-master"
+                  :mod-card="element"
+                ></mod-card>
+              </template>
+            </draggable>
+          </div>
+        </v-card>
+      </v-col>
+      <!-- 最終効果 -->
+      <v-col>
+        <v-card class="card bg-grey-lighten-5 px-4 py-1">
+          <div class="py-1">総容量 {{ totalCost }}MB</div>
+          <v-divider></v-divider>
+          <div class="py-1">
+            <p class="mt-2">効果</p>
+            <div class="text-caption d-flex flex-column">
+              <div
+                class="mr-2"
+                v-for="(v, i) of effects.labels"
+                :key="`e-${i}`"
+              >
+                ・{{ v }}
+              </div>
+            </div>
+          </div>
+          <v-divider></v-divider>
+          <div class="py-1">
+            <p class="mt-2">
+              合計値<span class="mini">HP(%)のみ当てにならないので注意</span>
+            </p>
+            <div class="text-caption d-flex flex-column">
+              <div
+                class="mr-2"
+                v-for="(v, i) of effects.totals"
+                :key="`t-${i}`"
+              >
+                ・{{ v }}
+              </div>
+            </div>
+          </div>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+
+<script setup lang="ts">
+import draggable from "vuedraggable";
+
+// https://www.therockmanexezone.com/wiki/Card_e-Reader_in_Mega_Man_Battle_Network_6
+// memo
+// カスタムHPバグは本来レベルがあるけど改造カードのは無い？どれも1.5/s削れた
+// カスタムダメージバグは個別に受けるダメージが決まってるけど後に選んだので上書き
+import allCards from "./modCards.json";
+import ModCard from "./ModCard.vue";
+import { mergeModEffect } from "./mergeModEffect";
+import { ref, computed, watchEffect } from "vue";
+
+// https://github.com/SortableJS/vue.draggable.next
+const useCards = ref<ModCard[]>([]);
+
+// 最小はナイトメアの5MB,最大は80
+const _maxCost = ref<number>(80);
+const maxCost = computed<number>({
+  get: () => _maxCost.value,
+  set(v) {
+    if (v < 5) _maxCost.value = 5;
+    else if (v > 80) _maxCost.value = 80;
+    else _maxCost.value = v;
+  },
+});
+
+// 総容量
+const totalCost = computed(() => {
+  return useCards.value.reduce((prev, curr) => {
+    return prev + curr.cost;
+  }, 0);
+});
+
+// trueなら残り容量を自動計算
+const autoUpdate = ref(true);
+watchEffect(() => {
+  if (autoUpdate.value) {
+    maxCost.value = 80 - totalCost.value;
+  }
+});
+
+const _keyword = ref("");
+const keyword = computed<string>({
+  get() {
+    return _keyword.value;
+  },
+  set(v: string) {
+    if (v) _keyword.value = v;
+    else _keyword.value = "";
+  },
+});
+
+// 検索を反映したmasterリスト
+const searchedList = computed(() => {
+  const underCost = allCards.filter((card) => {
+    return maxCost.value >= card.cost;
+  });
+
+  if (keyword.value !== "") {
+    return underCost.filter((card) => {
+      const name = card.name.includes(keyword.value);
+      if (name) return true;
+      return card.effects.find((effect) => effect.name.includes(keyword.value));
+    });
+  } else return underCost;
+});
+
+// 効果一覧
+const effects = computed(() => {
+  const [labels, totals] = mergeModEffect(useCards.value);
+  return {
+    labels,
+    totals,
+  };
+});
+
+function onDeleteItem(index: number) {
+  useCards.value.splice(index, 1);
+}
+
+// よべばくるやつ
+interface DragEvent {
+  dragged: HTMLElement;
+  related: HTMLElement;
+  to: HTMLElement;
+  from: HTMLElement;
+  draggedContext: {
+    // dragged element index
+    index: number;
+
+    // dragged element underlying view model element
+    element: ModCard;
+    // potential index of the dragged element if the drop operation is accepted
+    futureIndex: number;
+  };
+  relatedContext: {
+    // target element index
+    index: number;
+
+    // target element view model element
+    element: ModCard;
+
+    // target list
+    list: Array<ModCard>;
+
+    // target VueComponent
+    component: any;
+  };
+}
+function onMove(evt: DragEvent) {
+  // moveに渡したメソッドがfalseを返すと入れ替え操作がキャンセルされる
+
+  // master内の入れ替えはいらない
+  if (evt.dragged == evt.related) return false;
+
+  // 既に登録されたアイテムの追加はさせない
+  if (
+    evt.relatedContext.list.find((x) => x.id === evt.draggedContext.element.id)
+  )
+    return false;
+}
+</script>
+
+<style lang="scss" scoped>
+.card {
+  height: 100%;
+  &__title {
+    padding: 16px 24px 8px;
+    font-size: 1.2rem;
+  }
+
+  &__form {
+    padding: 0 16px;
+    font-size: 0.8rem;
+  }
+  &__list {
+    padding: 8px;
+  }
+}
+.draggable {
+  height: 60vh;
+  overflow: auto;
+}
+
+.item-wrapper {
+  position: relative;
+}
+.button {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+}
+
+.mod-card {
+  padding-top: 8px;
+  padding-right: 4px;
+}
+
+.mod-card-master {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.label-form {
+  font-size: 0.8rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mini {
+  font-size: 9px;
+}
+</style>
