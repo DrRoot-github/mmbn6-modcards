@@ -152,6 +152,11 @@
         </v-card>
       </v-col>
     </v-row>
+    <!-- 漢のURLハードコーディング -->
+    <div class="mt-4">
+      何かおかしいって時は<a href="https://drroot.page/wp/?p=327">ここの記事</a
+      >にコメントしてくだせ
+    </div>
   </v-container>
 </template>
 
