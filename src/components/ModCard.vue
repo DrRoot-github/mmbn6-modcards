@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="modcard-root">
+    <v-card class="modcard-root" :class="{ disabled: modCard.disabled }">
       <v-row class="px-4 py-1">
         <v-col class="text-body-2 d-flex flex-column justify-center">
           {{ modCard.name }}
@@ -37,4 +37,8 @@ const prop = defineProps<{
 }>();
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.disabled {
+  background-color: gainsboro;
+}
+</style>

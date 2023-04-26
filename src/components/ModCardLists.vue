@@ -18,7 +18,7 @@
                 <div class="item-wrapper">
                   <!-- 削除ボタン -->
                   <v-btn
-                    class="button"
+                    class="button delete"
                     icon="mdi-close"
                     width="16px"
                     height="16px"
@@ -28,6 +28,17 @@
                     @click="onDeleteItem(index)"
                   >
                   </v-btn>
+                  <!-- 無効化ボタン -->
+                  <v-btn
+                    class="button toggle"
+                    width="16px"
+                    height="16px"
+                    size="x-small"
+                    flat
+                    :icon="element.disabled ? 'mdi-eye-plus' : 'mdi-eye-minus'"
+                    color="white"
+                    @click="onToggleItem(index)"
+                  ></v-btn>
                   <!-- カード本体 -->
                   <mod-card
                     class="mod-card my-1"
@@ -57,6 +68,7 @@
                       variant="solo"
                       hide-details
                       v-model.number="maxCost"
+                      clearable
                     >
                       <template #prepend>
                         <div class="label-form">最大容量</div>
@@ -120,7 +132,12 @@
       <!-- 最終効果 -->
       <v-col>
         <v-card class="card bg-grey-lighten-5 px-4 py-1">
-          <div class="py-1">総容量 {{ totalCost }}MB</div>
+          <div class="py-1">
+            総容量 {{ totalCost }}MB
+            <span v-if="totalCost > 80" class="ml-2 text-body-2"
+              >{{ totalCost - 80 }}MB 超過</span
+            >
+          </div>
           <v-divider></v-divider>
           <div class="py-1">
             <p class="mt-2">効果</p>
@@ -180,15 +197,21 @@ const _maxCost = ref<number>(80);
 const maxCost = computed<number>({
   get: () => _maxCost.value,
   set(v) {
-    if (v < 5) _maxCost.value = 5;
+    if (v == null) _maxCost.value = 80;
+    else if (v < 5) _maxCost.value = 5;
     else if (v > 80) _maxCost.value = 80;
     else _maxCost.value = v;
   },
 });
 
+// つかうやつ中で有効なもの
+const useAvailableCards = computed(() => {
+  return useCards.value.filter((x) => !x.disabled);
+});
+
 // 総容量
 const totalCost = computed(() => {
-  return useCards.value.reduce((prev, curr) => {
+  return useAvailableCards.value.reduce((prev, curr) => {
     return prev + curr.cost;
   }, 0);
 });
@@ -229,7 +252,7 @@ const searchedList = computed(() => {
 
 // 効果一覧
 const effects = computed(() => {
-  const [labels, totals] = mergeModEffect(useCards.value);
+  const [labels, totals] = mergeModEffect(useAvailableCards.value);
   return {
     labels,
     totals,
@@ -238,6 +261,9 @@ const effects = computed(() => {
 
 function onDeleteItem(index: number) {
   useCards.value.splice(index, 1);
+}
+function onToggleItem(index: number) {
+  useCards.value[index].disabled = !useCards.value[index].disabled;
 }
 
 // よべばくるやつ
@@ -285,7 +311,10 @@ function onMove(evt: DragEvent) {
 
 <style lang="scss" scoped>
 .card {
-  height: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+
   &__title {
     padding: 16px 24px 8px;
     font-size: 1.2rem;
@@ -296,12 +325,13 @@ function onMove(evt: DragEvent) {
     font-size: 0.8rem;
   }
   &__list {
+    flex-grow: 1;
     padding: 8px;
+    overflow: auto;
   }
 }
 .draggable {
-  height: 60vh;
-  overflow: auto;
+  height: 100%;
 }
 
 .item-wrapper {
@@ -310,9 +340,13 @@ function onMove(evt: DragEvent) {
 .button {
   z-index: 1;
   position: absolute;
+}
+.delete {
   right: 0;
 }
-
+.toggle {
+  right: 24px;
+}
 .mod-card {
   padding-top: 8px;
   padding-right: 4px;

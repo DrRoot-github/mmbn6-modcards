@@ -29,6 +29,21 @@ import ModCardLists from "./components/ModCardLists.vue";
   background-color: #d8d8d8;
 }
 
+* {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.466);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgb(228, 228, 228);
+  }
+}
+
 .container {
   max-height: 99vh;
 }
