@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <!-- use for -->
-      <v-col cols="4">
+      <v-col md="4" cols="6">
         <v-card class="card mb-2" color="grey-lighten-4">
           <div class="card__title">つかうやつ</div>
           <div class="card__list">
@@ -20,10 +20,7 @@
                   <v-btn
                     class="button delete"
                     icon="mdi-close"
-                    width="16px"
-                    height="16px"
-                    size="x-small"
-                    flat
+                    v-bind="buttonProps"
                     color="blue"
                     @click="onDeleteItem(index)"
                   >
@@ -31,19 +28,20 @@
                   <!-- 無効化ボタン -->
                   <v-btn
                     class="button toggle"
-                    width="16px"
-                    height="16px"
-                    size="x-small"
-                    flat
+                    v-bind="buttonProps"
                     :icon="element.disabled ? 'mdi-eye-plus' : 'mdi-eye-minus'"
                     color="white"
                     @click="onToggleItem(index)"
                   ></v-btn>
                   <!-- カード本体 -->
-                  <mod-card
-                    class="mod-card my-1"
-                    :mod-card="element"
-                  ></mod-card>
+
+                  <mod-card class="mod-card my-1" :mod-card="element">
+                    <template #handle>
+                      <div class="handle">
+                        <v-icon size="18px">mdi-arrow-all</v-icon>
+                      </div>
+                    </template>
+                  </mod-card>
                 </div>
               </template>
             </draggable>
@@ -51,7 +49,7 @@
         </v-card>
       </v-col>
       <!-- master table -->
-      <v-col cols="4">
+      <v-col md="4" cols="6">
         <v-card class="card" color="grey-lighten-4">
           <div class="card__title">全カード</div>
           <!-- 検索フォーム -->
@@ -59,39 +57,37 @@
             <!-- 容量 -->
             <v-row>
               <v-col>
-                <v-row>
-                  <v-col cols="8">
-                    <v-text-field
-                      type="number"
-                      single-line
-                      density="compact"
-                      variant="solo"
-                      hide-details
-                      v-model.number="maxCost"
-                      clearable
-                    >
-                      <template #prepend>
-                        <div class="label-form">最大容量</div>
-                      </template>
-                      <template #append> MB </template>
-                    </v-text-field>
-                  </v-col>
-                  <v-col>
-                    <v-checkbox
-                      v-model="autoUpdate"
-                      density="compact"
-                      hide-details
-                    >
-                      <template #label>
-                        <div class="label-form">自動計算</div>
-                      </template>
-                    </v-checkbox>
-                  </v-col>
-                </v-row>
+                <div class="d-flex flex-wrap justify-space-between">
+                  <v-text-field
+                    type="number"
+                    single-line
+                    density="compact"
+                    variant="solo"
+                    hide-details
+                    v-model.number="maxCost"
+                    clearable
+                    style="max-width: 230px; margin-right: 12px"
+                  >
+                    <template #prepend>
+                      <div class="label-form">最大容量</div>
+                    </template>
+                    <template #append> MB </template>
+                  </v-text-field>
+                  <v-checkbox
+                    v-model="autoUpdate"
+                    density="compact"
+                    hide-details
+                    class="mr-auto"
+                  >
+                    <template #label>
+                      <div class="label-form">自動計算</div>
+                    </template>
+                  </v-checkbox>
+                </div>
               </v-col>
             </v-row>
             <!-- freeword -->
-            <v-row class="mt-2" no-gutters>
+            <v-row class="my-2" no-gutters>
               <v-col>
                 <v-text-field
                   clearable
@@ -115,15 +111,20 @@
                 pull: 'clone',
                 put: false,
               }"
+              :clone="(x:any)=>({...x})"
+              handle=".handle"
               :move="onMove"
               item-key="id"
               class="draggable"
             >
               <template #item="{ element }">
-                <mod-card
-                  class="my-1 mod-card-master"
-                  :mod-card="element"
-                ></mod-card>
+                <mod-card class="my-1" :mod-card="element">
+                  <template #handle>
+                    <div class="handle">
+                      <v-icon size="18px">mdi-arrow-all</v-icon>
+                    </div>
+                  </template>
+                </mod-card>
               </template>
             </draggable>
           </div>
@@ -267,6 +268,13 @@ function onToggleItem(index: number) {
 }
 
 // よべばくるやつ
+const buttonProps = {
+  width: "16px",
+  height: "16px",
+  size: "x-small",
+  flat: true,
+};
+
 interface DragEvent {
   dragged: HTMLElement;
   related: HTMLElement;
@@ -334,6 +342,20 @@ function onMove(evt: DragEvent) {
   height: 100%;
 }
 
+.handle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000000a;
+  border-right: 1px solid #00000021;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .item-wrapper {
   position: relative;
 }
@@ -350,12 +372,6 @@ function onMove(evt: DragEvent) {
 .mod-card {
   padding-top: 8px;
   padding-right: 4px;
-}
-
-.mod-card-master {
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .label-form {
