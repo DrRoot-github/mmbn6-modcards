@@ -45,7 +45,7 @@ import ModCardLists from "./components/ModCardLists.vue";
 }
 
 .container {
-  max-height: 99vh;
+  height: 100%;
 }
 
 .row {
