@@ -13,6 +13,7 @@
               }"
               item-key="id"
               class="draggable"
+              handle=".handle"
             >
               <template #item="{ element, index }">
                 <div class="item-wrapper">
@@ -170,6 +171,14 @@
         </v-card>
       </v-col>
     </v-row>
+    <!-- Url -->
+    <v-row>
+      <v-col>
+        <a @click.prevent="onCopiedUrl" class="dynamic-url">
+          復元用URL(clickでコピー)
+        </a>
+      </v-col>
+    </v-row>
     <!-- 漢のURLハードコーディング -->
     <div class="mt-4">
       何かおかしいって時は<a href="https://drroot.page/wp/?p=327">ここの記事</a
@@ -189,6 +198,7 @@ import allCards from "./modCards.json";
 import ModCard from "./ModCard.vue";
 import { mergeModEffect } from "./mergeModEffect";
 import { ref, computed, watchEffect } from "vue";
+import { onMounted } from "vue";
 
 // https://github.com/SortableJS/vue.draggable.next
 const useCards = ref<ModCard[]>([]);
@@ -260,6 +270,40 @@ const effects = computed(() => {
   };
 });
 
+// 保存用URL
+const selectionUrl = computed(() => {
+  const query = JSON.stringify(
+    useCards.value.map((x) => ({ id: x.id, e: !x.disabled }))
+  );
+  const ret = new URL(location.href);
+  ret.searchParams.set("cards", query);
+  return ret;
+});
+
+function onCopiedUrl() {
+  navigator.clipboard.writeText(selectionUrl.value.toString());
+}
+
+// 復元時にURLパラメータと同期
+onMounted(() => {
+  const url = new URL(location.href);
+  const rawparams = url.searchParams?.get("cards");
+  if (rawparams) {
+    const params = JSON.parse(rawparams);
+    if (Array.isArray(params)) {
+      for (const itr of params as { id: string; e: boolean }[]) {
+        const found = allCards.find((x) => x.id === itr.id);
+        if (found) {
+          const clone = { ...found } as ModCard;
+          clone.disabled = !itr.e;
+          useCards.value.push(clone);
+        }
+      }
+    }
+  }
+});
+
+// その他いろいろ
 function onDeleteItem(index: number) {
   useCards.value.splice(index, 1);
 }
@@ -383,5 +427,14 @@ function onMove(evt: DragEvent) {
 
 .mini {
   font-size: 9px;
+}
+
+.dynamic-url {
+  // font-size: 0.8rem;
+  color: rgb(0, 174, 255);
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
+  }
 }
 </style>
