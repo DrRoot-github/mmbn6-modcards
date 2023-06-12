@@ -254,6 +254,14 @@ const searchedList = computed(() => {
 
   if (keyword.value !== "") {
     return underCost.filter((card) => {
+      // おまけ機能 文字列csで検索された場合のみ特殊なフィルタとして機能させる
+      if (keyword.value.toLowerCase() === "cs") {
+        return card.effects.find(
+          (ef) =>
+            ef.name.includes("ためうち") || ef.name.includes("チャージショット")
+        );
+      }
+
       const name = card.name.includes(keyword.value);
       if (name) return true;
       return card.effects.find((effect) => effect.name.includes(keyword.value));
