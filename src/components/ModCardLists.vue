@@ -133,7 +133,7 @@
       </v-col>
       <!-- 最終効果 -->
       <v-col>
-        <v-card class="card bg-grey-lighten-5 px-4 py-1">
+        <v-card class="card overflow-auto bg-grey-lighten-5 px-4 py-1">
           <div class="py-1">
             総容量 {{ totalCost }}MB
             <span v-if="totalCost > 80" class="ml-2 text-body-2"
